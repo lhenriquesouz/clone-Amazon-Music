@@ -99,12 +99,13 @@ header{
 
 .search-ico{
     display: flex;
-    position: relative;
-    right: 16%;
-    margin-top: 1.5%;
+    position: fixed;
+    right: 23.5%;
+    top: 30%;
     height: 100%;
     align-items: center;
 }
+
 .fa-search:before{
     font-size: 22px;
     color: rgb(65, 65, 65);
@@ -117,10 +118,32 @@ header{
     border: none;
 }
 
+.search-input:focus{
+    padding: 25px;
+    top: 2px;
+    right: 23%;
+    width: 650px;
+    position: fixed;
+    background-color:#2E2F2F;
+    border-radius: 0;
+    outline: 0;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    color: aliceblue;
+}
+
 /*search input*/
 .link-search{
     display: flex;
     margin-right: 20px;
+    width: 100%;
+}
+
+.search-in:focus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*---------------------------------------------------------*/
@@ -283,6 +306,7 @@ footer{
 
 .img-play:hover{
     opacity: 0.5;  
+    background-image: url('./images/dislike.svg');
 }
 
 .content-owl a{
