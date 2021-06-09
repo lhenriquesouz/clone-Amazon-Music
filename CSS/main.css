@@ -15,7 +15,8 @@ a{
 }
 
 body{
-    background-color: #0B0B0C;
+    /* background-color: #0B0B0C; */
+    background-image: linear-gradient(black, #1f2222);
     font-family: 'Roboto', sans-serif;
     color: #fff;
     height: 100%;
@@ -32,8 +33,19 @@ body{
 
 nav{
     border-bottom: 1px solid rgba(255, 255, 255, 0.404);
-    background-color: #050606;
-    
+    backdrop-filter: blur(10px);
+    background-color: #0e0e0e7e;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+header{
+    margin-bottom: 100px;
 }
 
 .link-item a{
@@ -184,14 +196,14 @@ nav{
 /*footer*/
 footer{
     border-top: 1px solid #fff;
-    background-color: rgba(22, 22, 22, 0.904);
+    backdrop-filter: blur(10px);
+    background-color: #0e0e0e7e;
     margin-top: 0;
     height: 78px;
     position:fixed;
     width: 100%;
     bottom: 0;
     z-index: 1;
-    backdrop-filter: blur(5px);
 }
 
 .img-footer{
@@ -216,6 +228,7 @@ footer{
     flex-wrap: wrap;
     gap: 35px;
     cursor: pointer;
+    margin-left: -10%;
 }
 .teste:hover{
     filter: opacity(3);
@@ -315,12 +328,11 @@ footer{
 }
 
 .owl-nav {
-    font-size: 34px;
-    margin-right: 20px;
+    width: 100%;
+    font-size: 30px;
     position: absolute;
-    margin-top: -262px;
-    margin-left: 70%;
-    margin-right: 20px;
+    margin-top: -235px;
+    margin-left: 68%;
 }
 
 .owl-prev{
@@ -390,14 +402,14 @@ footer{
     }
 }
 
-.container, .links {
+.container, .links, .cont {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
   }
   @media (min-width: 768px) {
-    .container {
+    .container, .cont {
       width: 750px;
     }
     .links{
@@ -405,7 +417,7 @@ footer{
     }
   }
   @media (min-width: 992px) {
-    .container {
+    .container, .cont {
       width: 970px;
     }
     .links {
@@ -416,8 +428,8 @@ footer{
     .container {
       width: 1170px;
     }
-    .links {
-        width: 1170px;
+    .links, .cont {
+        width: 1570px;
       }
   }
 
